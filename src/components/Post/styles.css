@@ -1,0 +1,51 @@
+.post {
+  border: 0.1rem solid #454545;
+  background-color: #080808;
+  padding: 2rem 3rem;
+  border-radius: 0.8rem;
+  color: #eaeaea;
+}
+
+.post > header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.post > header > p {
+  text-transform: capitalize;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.post > header > p > span {
+  text-transform: lowercase;
+  color: #838383;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.likes-comments {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+
+.likes-comments > button {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--Poppins-font);
+  border: none;
+  color: #eaeaea;
+  padding: .5rem 1rem .5rem 0;
+  cursor: pointer;
+}
+
+.likes-comments > button:hover {
+  transform: scale(1.05);
+}

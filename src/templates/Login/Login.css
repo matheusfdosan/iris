@@ -1,0 +1,110 @@
+.login-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #080808;
+  background-image: url(../../assets/images/texture-2.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.view-login {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.view-login > header {
+  padding: 3rem 2rem;
+}
+
+.view-login > header > a > img {
+  width: 3.4rem;
+  height: 3.4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.view-login > main > form {
+  width: 60%;
+  max-width: 60rem;
+  margin: auto;
+  border: 0.1rem solid #2d2d2d;
+  background-color: #080808;
+  z-index: 2;
+  padding: 4rem;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header > img {
+  position: relative;
+  z-index: 2;
+}
+
+.view-login > main > form > h1 {
+  color: #eaeaea;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.blur {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  position: absolute;
+  filter: blur(10rem);
+  z-index: 1;
+}
+
+.blur:nth-child(1) {
+  background-color: #2a39be;
+  top: -10rem;
+  left: -10rem;
+}
+
+.blur:nth-child(2) {
+  background-color: #cd2b2b;
+  bottom: -10rem;
+  right: -10rem;
+}
+
+@media (max-width: 610px) {
+  .view-login > main > form {
+    width: 80%;
+  }
+
+  html {
+    font-size: 58%;
+  }
+}
+
+@media (min-width: 572px) {
+  .view-login > main > form {
+    background-color: #080808;
+    border: 0.1rem solid #2d2d2d;
+  }
+}
+
+@media (max-width: 455px) {
+  .view-login > main > form {
+    width: 100%;
+    background-color: #08080800;
+    border: none;
+  }
+
+  .view-login > main > form > h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 302px) {
+  .view-login > main > form {
+    padding: 1rem;
+  }
+}

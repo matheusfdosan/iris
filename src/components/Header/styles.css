@@ -1,0 +1,25 @@
+header {
+  width: 100%;
+  color: #eaeaea;
+  margin-bottom: 3rem;
+}
+
+header > .header-container > .user-profile {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+header > .header-container > .user-profile > .userinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-family: var(--Poppins-font);
+}
+
+header > .header-container > .user-profile > .userinfo > .greetings {
+  font-family: var(--Lora-font);
+  color: #929292;
+  font-weight: 500;
+}

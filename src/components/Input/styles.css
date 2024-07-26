@@ -1,0 +1,32 @@
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label > p {
+  text-align: left;
+  margin: 0;
+  color: #eaeaea;
+}
+
+label > input {
+  font-size: 100%;
+  width: 100%;
+  display: inline-flex;
+  border: 0.1rem solid #2d2d2d;
+  border-radius: 0.6rem;
+  padding: 0 1.2rem;
+  background: #0a0a0a;
+  color: #eaeaea;
+  height: 4rem;
+  outline: none;
+  line-height: normal;
+  outline: none !important;
+}
+
+label > input:-webkit-autofill:focus {
+  appearance: menulist-button;
+  background-image: none !important;
+   background-color: #0a0a0a;
+}

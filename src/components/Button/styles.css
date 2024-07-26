@@ -1,0 +1,28 @@
+.button-component {
+  padding: 1rem 1.8rem;
+  height: 4rem;
+  border-radius: 0.8rem;
+  font-family: var(--Montserrat-font);
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.button-component.white-button {
+  color: #000;
+  background-color: #ededed;
+}
+
+.button-component.white-button:hover {
+  background-color: #b6b6b6;
+}
+
+.button-component.dark-button {
+  color: #fff;
+  background-color: #080808;
+  border: 0.1rem solid #585858;
+}
+
+.button-component.dark-button:hover {
+  background-color: #121212;
+}
