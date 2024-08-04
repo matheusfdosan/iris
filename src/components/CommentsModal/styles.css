@@ -1,0 +1,94 @@
+.modal-overlay {
+  background-color: #000000a1;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+}
+
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  border: 0.1rem solid #454545;
+  background-color: #080808;
+  padding: 4rem;
+  border-radius: 0.8rem;
+  color: #eaeaea;
+  width: 60%;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.modal > .modal-content > h2 {
+  margin-bottom: 2rem;
+  color: #eaeaeaa6;
+}
+
+.modal > .modal-content > ul {
+  list-style: none;
+  height: 25rem;
+  overflow-y: auto;
+  margin-top: 2rem;
+}
+
+.modal > .modal-content > ul::-webkit-scrollbar {
+  width: 7px;
+}
+
+.modal > .modal-content > ul::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal > .modal-content > ul::-webkit-scrollbar-thumb {
+  background: #eaeaea98;
+  border-radius: 10px;
+}
+
+.modal > .modal-content > ul::-webkit-scrollbar-thumb:hover {
+  background: #eaeaeab9;
+}
+
+.modal > .modal-content > ul > li {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.modal > .modal-content > ul > li > .comment-body {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.modal > .modal-content > ul > li > .comment-body > div > h3{
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: inline;
+  margin-right: 1rem;
+}
+
+.modal > .modal-content > ul > li > .comment-body > div > p {
+  display: inline;
+}
+
+.modal-footer {
+  padding-top: 2rem;
+}
+
+.your-comment {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+  width: 100%;
+}
+
+label {
+  width: 100%;
+}

@@ -3,8 +3,6 @@ import { LateralBar } from "../../components/LateralBar"
 import { Header } from "../../components/Header"
 import { PostsContainer } from "../../components/PostsContainer"
 import { greetings } from "../../utils/greetings"
-import { fetchPosts } from "../../utils/fetchPosts"
-import { fetchUsers } from "../../utils/fetchUsers"
 
 export const Home = () => {
   return (
@@ -12,15 +10,11 @@ export const Home = () => {
       <LateralBar />
 
       <div className="posts-view">
-        <Header
-          url={fetchUsers()[0].profilePicture}
-          username={"Matheus Faustino"}
-          greetings={greetings()}
-        />
+        <Header user={["https://m.media-amazon.com/images/M/MV5BMjExOTY3NzExM15BMl5BanBnXkFtZTgwOTg1OTAzMTE@._V1_.jpg", "Matheus Faustino"]} greetings={greetings()} />
         <main>
-          <h1>Postagens de quem você segue</h1>
+          <h1>Postagens</h1>
           <div className="posts-container">
-            <PostsContainer posts={fetchPosts()} />
+            <PostsContainer />
           </div>
         </main>
       </div>

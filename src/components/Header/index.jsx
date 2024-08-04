@@ -1,17 +1,17 @@
 import { ProfilePicture } from "../ProfilePicture"
 import "./styles.css"
 
-export const Header = ({ username, url, greetings }) => {
+export const Header = ({ user, greetings }) => {
   return (
     <header>
       <div className="header-container">
         <div className="user-profile">
           <ProfilePicture
-            image={url}
-            alternative={username + "-picture"}
+            image={user[0]}
+            alternative={user[1] + "-picture"}
           />
           <div className="userinfo">
-            <p>{username}</p>
+            <p>{user[1]}</p>
             <span className="greetings">{greetings}</span>
           </div>
         </div>
