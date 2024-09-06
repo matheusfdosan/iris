@@ -12,12 +12,7 @@ const LikesModal = ({ show, onClose, children }) => {
 
         <div className="modal-content">{children}</div>
         <div className="modal-footer">
-          <Button
-            title={"Close"}
-            type="button"
-            clickButton={onClose}
-            color={"dark"}
-          />
+         
         </div>
       </div>
     </div>

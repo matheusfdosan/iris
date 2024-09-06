@@ -3,13 +3,12 @@ import "./styles.css"
 
 const CommentsModal = ({ show, onClose, children }) => {
   if (!show) {
-    return null;
+    return null
   }
 
   return (
     <div className="modal-overlay">
       <div className="modal">
-
         <div className="modal-content">{children}</div>
         <div className="modal-footer">
           <Button
@@ -21,8 +20,7 @@ const CommentsModal = ({ show, onClose, children }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CommentsModal;
-
+export default CommentsModal

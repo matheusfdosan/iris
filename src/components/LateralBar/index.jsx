@@ -18,7 +18,7 @@ export const LateralBar = () => {
       </div>
       <nav>
         <ul>
-          <li>
+        <li>
             <Link to="/home">
               <img src={starIcon} alt="home-icon" />
               <span>Principal</span>

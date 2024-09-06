@@ -46,6 +46,12 @@
   height: 1.4rem;
 }
 
+@media (max-width: 570px) {
+  .lateral-bar-container {
+    display: none;
+  }
+}
+
 @media (max-width: 750px) {
   .lateral-bar-container > nav > ul > li > a {
     padding: 1.8rem 1rem;

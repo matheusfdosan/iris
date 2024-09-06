@@ -92,3 +92,20 @@
 label {
   width: 100%;
 }
+
+@media (max-width: 760px) {
+  .modal {
+    width: 80%;
+  }
+}
+
+@media (max-width: 550px) {
+  .modal {
+    width: 95%;
+    height: 95%;
+  }
+  
+  .modal > .modal-content > ul {
+    height: 95%;
+  }
+}

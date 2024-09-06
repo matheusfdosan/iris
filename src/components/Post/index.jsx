@@ -66,7 +66,11 @@ export const Post = ({
         </div>
       </main>
       <LikesModal show={showLikesModal} onClose={handleCloseLikesModal}>
-        <h2>Likes nessa postagem</h2>
+        <div className="modal-header">
+          <h2>Likes nessa postagem</h2>
+          
+
+        </div>
         <ul>
           <li>
             <ProfilePicture

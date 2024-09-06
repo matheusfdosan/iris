@@ -2,6 +2,9 @@ header {
   width: 100%;
   color: #eaeaea;
   margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header > .header-container > .user-profile {
@@ -22,4 +25,95 @@ header > .header-container > .user-profile > .userinfo > .greetings {
   font-family: var(--Lora-font);
   color: #929292;
   font-weight: 500;
+}
+
+.burguer-container {
+  display: none;
+}
+
+.burguer-container > .burguer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .8rem;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+}
+
+.burguer-container > .burguer > .line {
+  width: 100%;
+  height: .3rem;
+  background-color: #fff;
+  border-radius: 5rem;
+  pointer-events: none;
+}
+
+.burguer-container > .burguer > nav {
+  display: none;
+}
+
+.burguer.active > nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: #080808;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: auto;
+}
+
+.close-burguer {
+  position: absolute;
+  z-index: 4;
+  top: 1.5rem;
+  right: 3rem;
+  cursor: pointer;
+  padding: 2rem;
+}
+
+.close-burguer > img {
+  width: 2rem;
+  height: 2rem;
+}
+
+
+.burguer.active > nav > ul {
+  list-style: none;
+  gap: 2rem;
+  width: 100%;
+  flex-direction: column;
+}
+
+.burguer.active > nav > ul > li {
+  width: 100%;
+}
+
+.burguer.active > nav > ul > li > a {
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding: 1.5rem 1rem;
+  border-radius: 0.8rem;
+  transition: display 300ms ease;
+}
+
+.burguer.active > nav > ul > li > a:hover {
+  background-color: #ffffff21;
+}
+
+@media (max-width: 570px) {
+  .burguer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
